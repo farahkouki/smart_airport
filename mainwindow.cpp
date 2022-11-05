@@ -30,8 +30,6 @@ MainWindow::~MainWindow()
     delete ui;
 
 
-
-
 }
 
 void MainWindow::on_pb_ajouter_clicked()
@@ -86,5 +84,43 @@ void MainWindow::on_pb_supprimer_clicked()
         msgBox.exec();
 
 
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    gestion_de_vole V1;
+        V1.setid(ui->le_id->text().toInt());
+        bool test=V1.supprimer(V1.getid());
+        if(!test){
+            QMessageBox::critical(nullptr, QObject::tr("nope"),
+                        QObject::tr("update failed.\n"
+                                    "Click Cancel to exit."), QMessageBox::Cancel);
+
+
+        ui->tab_gestion_de_vole->setModel(V1.afficher());
+        }
+        else
+        {   int id=ui->le_id->text().toInt();
+            QString destination=ui->le_nom->text();
+            int temps=ui->le_prenom->text().toInt();
+      gestion_de_vole
+              V(id , destination, temps);
+      bool test1=V.ajouter();
+
+      if(test1)
+
+
+          QMessageBox::information(nullptr, QObject::tr("ok"),
+                      QObject::tr("update successful.\n"
+                                  "update effectuer."), QMessageBox::Cancel);
+
+
+      else
+
+          QMessageBox::critical(nullptr, QObject::tr("nope"),
+                      QObject::tr("connection failed.\n"
+                                  "Click Cancel to exit."), QMessageBox::Cancel);
+    }
 }
 

@@ -31,7 +31,11 @@ text-decoration: underline;</string>
      <enum>QTabWidget::North</enum>
     </property>
     <property name="currentIndex">
+<<<<<<< HEAD
      <number>1</number>
+=======
+     <number>0</number>
+>>>>>>> 7ee1b7abc5d55bc4c93800dd25f4c278f7293532
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -184,6 +188,28 @@ text-decoration: underline;
         <string/>
        </property>
       </widget>
+<<<<<<< HEAD
+=======
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>210</y>
+         <width>83</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(86, 86, 86);
+font: 700 italic 9pt &quot;Segoe UI&quot;;
+text-decoration: underline;</string>
+       </property>
+       <property name="text">
+        <string>Update</string>
+       </property>
+      </widget>
+>>>>>>> 7ee1b7abc5d55bc4c93800dd25f4c278f7293532
       <zorder>label_pic</zorder>
       <zorder>label</zorder>
       <zorder>label_2</zorder>
@@ -192,6 +218,10 @@ text-decoration: underline;
       <zorder>le_nom</zorder>
       <zorder>le_prenom</zorder>
       <zorder>pb_ajouter</zorder>
+<<<<<<< HEAD
+=======
+      <zorder>pushButton_2</zorder>
+>>>>>>> 7ee1b7abc5d55bc4c93800dd25f4c278f7293532
      </widget>
     </widget>
     <widget class="QWidget" name="tab_2">

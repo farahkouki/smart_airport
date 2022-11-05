@@ -23,6 +23,11 @@ private slots:
 
     void on_pb_supprimer_clicked();
 
+<<<<<<< HEAD
+=======
+    void on_pushButton_2_clicked();
+
+>>>>>>> 7ee1b7abc5d55bc4c93800dd25f4c278f7293532
 private:
     Ui::MainWindow *ui;
     gestion_de_vole V;

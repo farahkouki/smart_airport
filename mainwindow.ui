@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1035</width>
-    <height>615</height>
+    <width>1494</width>
+    <height>616</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,345 +17,682 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1021</width>
-      <height>561</height>
+      <x>70</x>
+      <y>50</y>
+      <width>1131</width>
+      <height>461</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 italic 9pt &quot;Segoe UI&quot;;
-text-decoration: underline;</string>
-    </property>
-    <property name="tabPosition">
-     <enum>QTabWidget::North</enum>
+     <string notr="true">
+background-color: rgb(, 255, 255);</string>
     </property>
     <property name="currentIndex">
-<<<<<<< HEAD
-     <number>1</number>
-=======
-     <number>0</number>
->>>>>>> 7ee1b7abc5d55bc4c93800dd25f4c278f7293532
+     <number>7</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Ajouter vole</string>
+      <string>ajouter un voyageur </string>
      </attribute>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>31</y>
+        <width>1091</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 127);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>1031</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../photo c++/map2.jpg</pixmap>
+      </property>
+     </widget>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1011</width>
-        <height>501</height>
+        <x>290</x>
+        <y>50</y>
+        <width>541</width>
+        <height>321</height>
        </rect>
       </property>
-      <property name="title">
-       <string>Ajouter :</string>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Bell MT&quot;;</string>
       </property>
-      <widget class="QLabel" name="label">
+      <property name="title">
+       <string>ajout </string>
+      </property>
+      <widget class="QLineEdit" name="le_cin">
        <property name="geometry">
         <rect>
-         <x>280</x>
-         <y>90</y>
-         <width>81</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(35, 108, 255);
-text-decoration: underline;
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-color: rgb(86, 86, 86);
-text-decoration: underline;
-</string>
-       </property>
-       <property name="text">
-        <string>Identifiant</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>280</x>
-         <y>210</y>
-         <width>91</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(35, 108, 255);
-text-decoration: underline;
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-color: rgb(86, 86, 86);
-text-decoration: underline;</string>
-       </property>
-       <property name="text">
-        <string>Destination</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>280</x>
-         <y>340</y>
-         <width>61</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(35, 108, 255);
-text-decoration: underline;
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-color: rgb(86, 86, 86);
-text-decoration: underline;</string>
-       </property>
-       <property name="text">
-        <string>Temps</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="le_id">
-       <property name="geometry">
-        <rect>
-         <x>540</x>
-         <y>90</y>
+         <x>230</x>
+         <y>80</y>
          <width>113</width>
-         <height>20</height>
+         <height>22</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 108, 35);</string>
+        <string notr="true">background-color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="le_nom">
        <property name="geometry">
         <rect>
-         <x>540</x>
-         <y>210</y>
+         <x>230</x>
+         <y>130</y>
          <width>113</width>
-         <height>20</height>
+         <height>22</height>
         </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 108, 35);</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="le_prenom">
        <property name="geometry">
         <rect>
-         <x>540</x>
-         <y>340</y>
+         <x>230</x>
+         <y>190</y>
          <width>113</width>
-         <height>20</height>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>80</y>
+         <width>56</width>
+         <height>16</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 108, 35);</string>
+        <string notr="true">background-color: rgb(255, 85, 0);
+text-decoration: underline;
+font: 8pt &quot;MS Shell Dlg 2&quot;;
+text-decoration: underline;
+font: 8pt &quot;MS Shell Dlg 2&quot;;
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+text-decoration: underline;
+font: 14pt &quot;Algerian&quot;;</string>
+       </property>
+       <property name="text">
+        <string>cin</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>130</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 85, 0);
+text-decoration: underline;
+font: 14pt &quot;Algerian&quot;;</string>
+       </property>
+       <property name="text">
+        <string>nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>190</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 85, 0);
+text-decoration: underline;
+font: 14pt &quot;Algerian&quot;;</string>
+       </property>
+       <property name="text">
+        <string>prenom</string>
        </property>
       </widget>
       <widget class="QPushButton" name="pb_ajouter">
        <property name="geometry">
         <rect>
          <x>410</x>
-         <y>430</y>
-         <width>75</width>
-         <height>23</height>
+         <y>110</y>
+         <width>101</width>
+         <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 170, 255);
-color: rgb(0, 0, 0);
-text-decoration: underline;
-color: rgb(86, 86, 86);
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-text-decoration: underline;
-</string>
+        <string notr="true">background-color: rgb(0, 213, 255);
+background-color: rgb(85, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
        </property>
        <property name="text">
-        <string>Ajouter</string>
+        <string>ajouter</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_pic">
+      <widget class="QPushButton" name="pb_modifier">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>-71</y>
-         <width>1031</width>
-         <height>591</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-<<<<<<< HEAD
-=======
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="geometry">
-        <rect>
-         <x>790</x>
-         <y>210</y>
-         <width>83</width>
-         <height>29</height>
+         <x>410</x>
+         <y>160</y>
+         <width>101</width>
+         <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 170, 255);
-color: rgb(86, 86, 86);
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-text-decoration: underline;</string>
+        <string notr="true">background-color: rgb(85, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
        </property>
        <property name="text">
-        <string>Update</string>
+        <string>modifier </string>
        </property>
       </widget>
->>>>>>> 7ee1b7abc5d55bc4c93800dd25f4c278f7293532
-      <zorder>label_pic</zorder>
-      <zorder>label</zorder>
-      <zorder>label_2</zorder>
-      <zorder>label_3</zorder>
-      <zorder>le_id</zorder>
-      <zorder>le_nom</zorder>
-      <zorder>le_prenom</zorder>
-      <zorder>pb_ajouter</zorder>
-<<<<<<< HEAD
-=======
-      <zorder>pushButton_2</zorder>
->>>>>>> 7ee1b7abc5d55bc4c93800dd25f4c278f7293532
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget">
+     <attribute name="title">
+      <string>afficher un voyageur</string>
+     </attribute>
+     <widget class="QTableView" name="tab_voyageur">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>701</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 127);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_imp">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>140</y>
+        <width>181</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string> PDF</string>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Afficher vole</string>
+      <string>supprimer un voyageur</string>
      </attribute>
-     <widget class="QTableView" name="tab_gestion_de_vole">
+     <widget class="QListWidget" name="listWidget_2">
       <property name="geometry">
        <rect>
-        <x>-5</x>
-        <y>1</y>
-        <width>381</width>
-        <height>521</height>
+        <x>30</x>
+        <y>21</y>
+        <width>1051</width>
+        <height>401</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(143, 48, 0);</string>
+       <string notr="true">background-color: rgb(255, 170, 127);</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_pic1">
+     <widget class="QLabel" name="label_pic_2">
       <property name="geometry">
        <rect>
-        <x>2</x>
-        <y>-71</y>
-        <width>1031</width>
-        <height>591</height>
+        <x>260</x>
+        <y>20</y>
+        <width>821</width>
+        <height>401</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 127);</string>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../photo c++/map2.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>80</y>
+        <width>531</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+font: 9pt &quot;Papyrus&quot;;</string>
+      </property>
+      <property name="title">
+       <string>supprimer</string>
+      </property>
+      <widget class="QPushButton" name="pb_supprimer">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>180</y>
+         <width>131</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>supprimer </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>75</x>
+         <y>80</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 85, 0);
+text-decoration: underline;
+font: 20pt &quot;Algerian&quot;;</string>
+       </property>
+       <property name="text">
+        <string>cin</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_id_supp">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>80</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Trier le tableau de voyageur</string>
+     </attribute>
+     <widget class="QTableView" name="tabletri">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>1</y>
+        <width>821</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 127);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_tri">
+      <property name="geometry">
+       <rect>
+        <x>842</x>
+        <y>177</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 255);
+font: 87 20pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>trier</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>rechercher un voyageur</string>
+     </attribute>
+     <widget class="QTableView" name="tablevoyageur">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>751</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 127);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>855</x>
+        <y>160</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Algerian&quot;;
+background-color: rgb(255, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>cin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chercher_cin">
+      <property name="geometry">
+       <rect>
+        <x>852</x>
+        <y>257</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_cin">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>161</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>statistique</string>
+     </attribute>
+     <widget class="QCustomPlot" name="plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>881</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="bx_x">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>400</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 85, 0);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>400</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="bx_y">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>400</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 85, 0);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>400</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_add">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>390</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clear">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>390</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>CodeQR</string>
+     </attribute>
+     <widget class="QPushButton" name="qrcodegen">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 255);
+font: 87 14pt &quot;Gill Sans Nova Cond Ultra Bold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>CODE QR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="qrcodecommande">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>90</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>capteur de distance</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>70</y>
+        <width>761</width>
+        <height>331</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>150</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>lampe</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>270</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>etat</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>260</y>
-        <width>83</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);
-text-decoration: underline;
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-color: rgb(86, 86, 86);
-
-
-
-</string>
-      </property>
-      <property name="text">
-       <string>Refresh</string>
-      </property>
-     </widget>
-     <zorder>label_pic1</zorder>
-     <zorder>tab_gestion_de_vole</zorder>
-     <zorder>pushButton</zorder>
-    </widget>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>Supprimer vole</string>
-     </attribute>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>130</y>
-        <width>81</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(35, 108, 255);
-
-color: rgb(86, 86, 86);
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-text-decoration: underline;</string>
-      </property>
-      <property name="text">
-       <string>Identifiant</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="le_id_supp">
-      <property name="geometry">
-       <rect>
-        <x>550</x>
-        <y>130</y>
-        <width>113</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 108, 35);</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pb_supprimer">
-      <property name="geometry">
-       <rect>
-        <x>440</x>
-        <y>290</y>
-        <width>83</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);
-
-
-color: rgb(86, 86, 86);
-font: 700 italic 9pt &quot;Segoe UI&quot;;
-text-decoration: underline;</string>
-      </property>
-      <property name="text">
-       <string>Supprimer</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_pic2">
-      <property name="geometry">
-       <rect>
-        <x>2</x>
-        <y>-71</y>
-        <width>1021</width>
-        <height>591</height>
+        <x>510</x>
+        <y>150</y>
+        <width>93</width>
+        <height>28</height>
        </rect>
       </property>
       <property name="text">
-       <string/>
+       <string>clignoter</string>
       </property>
      </widget>
-     <zorder>label_pic2</zorder>
-     <zorder>label_4</zorder>
-     <zorder>le_id_supp</zorder>
-     <zorder>pb_supprimer</zorder>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>150</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>allumer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>270</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -364,8 +701,8 @@ text-decoration: underline;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1035</width>
-     <height>25</height>
+     <width>1494</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
@@ -380,6 +717,14 @@ text-decoration: underline;</string>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -3,14 +3,15 @@
 # Project created by QtCreator 2018-10-26T21:45:23
 #
 #-------------------------------------------------
-
+QT        += core gui sql core network multimedia multimediawidgets charts serialport printsupport widgets
+QT            += core gui serialport
 QT       += core gui sql
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Atelier_Connexion
 TEMPLATE = app
-
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -24,17 +25,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 CONFIG += c++11
+CONFIG +=console
 
 SOURCES += \
-    gestion_de_vole.cpp \
+    QrCode.cpp \
+    arduino.cpp \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp
+    connection.cpp \
+    qcustomplot.cpp \
+    voyageur.cpp
 
 HEADERS += \
-    gestion_de_vole.h \
+    QrCode.hpp \
+    arduino.h \
         mainwindow.h \
-    connection.h
+    connection.h \
+    qcustomplot.h \
+    voyageur.h
 
 FORMS += \
         mainwindow.ui

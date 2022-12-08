@@ -3,26 +3,38 @@
 #include <QString>
 #include <QSqlQueryModel>
 
+
 class gestion_de_vole
 {
 public:
     gestion_de_vole();
 
-    gestion_de_vole(int ,QString,int);
+    gestion_de_vole(int ,QString,QString);
     int getid();
     QString getdestination();
-    int gettemps();
+    QString gettemps();
     void setid(int);
     void setdestination(QString);
-    void settemps(int);
+    void settemps(QString);
     bool ajouter();
     QSqlQueryModel* afficher();
-    bool supprimer(int );
+    bool supprimer(int);
+    bool rechercher(int);
+    QSqlQueryModel* afficher1();
+    QSqlQueryModel* tri();
+    //QSqlQueryModel* afficher2();
+
+
+
+
 
 
  private:
-        int id,temps;
-        QString destination;
+        int id;
+        QString destination,temps;
+
+
+
 
 };
 

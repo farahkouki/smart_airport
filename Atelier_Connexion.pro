@@ -1,31 +1,20 @@
-
-
-
 #-------------------------------------------------
 #
 # Project created by QtCreator 2018-10-26T21:45:23
 #
 #-------------------------------------------------
-QT += core gui serialport
-QT += qml quick sql
-QT       += core gui sql \
 
+QT       += core gui sql
 
-    quick
-    QT       +=core gui sql multimedia multimediawidgets charts
-    QT       +=core gui sql multimedia multimediawidgets charts
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui serialport
 QT       += core gui sql  printsupport charts multimedia multimediawidgets
-QT       += core gui sql  printsupport charts multimedia multimediawidgets serialport
-    quick
-
-QT += widgets
-
-requires(qtConfig(filedialog))
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets quickwidgets
-
-
+QT       += core gui sql core network multimedia multimediawidgets charts serialport printsupport widgets
 TARGET = Atelier_Connexion
 TEMPLATE = app
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets quickwidgets
+
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -41,29 +30,34 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    clients.cpp \
-    employe.cpp \
-    event.cpp \
-    login.cpp \
+    avion.cpp \
+    camera.cpp \
+    etudiant.cpp \
+    exportexcelobject.cpp \
+    gestion_de_vole.cpp \
         main.cpp \
+        mainwindow.cpp \
     connection.cpp \
-    mainwindow.cpp \
     qrcode.cpp \
-    statclient.cpp
+    stat.cpp \
+    voyageur.cpp
 
 HEADERS += \
-    clients.h \
-    employe.h \
-    event.h \
+    avion.h \
+    camera.h \
+    etudiant.h \
+    exportexcelobject.h \
+    gestion_de_vole.h \
+        mainwindow.h \
     connection.h \
-    login.h \
-    mainwindow.h \
     qrcode.h \
-    statclient.h
+    stat.h \
+    voyageur.h
 
 FORMS += \
-    login.ui \
-    mainwindow.ui
+        camera.ui \
+        mainwindow.ui \
+        stat_combo.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -72,9 +66,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     chart.qrc \
-    qml.qrc
-
-SUBDIRS += \
-    ../../../Documents/QmlMap-main/MapTest.pro
-
-DISTFILES +=
+    map.qrc

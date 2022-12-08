@@ -2,4 +2,8 @@
     <qresource prefix="/Charts">
         <file>qtdata.cht</file>
     </qresource>
+    <qresource prefix="/">
+        <file>qml.qrc</file>
+        <file>map.qml</file>
+    </qresource>
 </RCC>

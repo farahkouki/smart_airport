@@ -1,84 +1,115 @@
-#include "etudiant.h"
-#include <QSqlQuery>
-#include <QtDebug>
-#include<QObject>
-#include<QSqlQueryModel>
+    #include "etudiant.h"
+    #include <QSqlRecord>
+    #include <QDebug>
 
 
-Event::Event()
+etudiant::etudiant(int id,QString nom, QString prenom)
 {
-    id=0;
-    nom="";
-    prenom="";
-
-
-
+   this->id=id;
+   this->nom=nom;
+   this->prenom=prenom;
 }
-Event::Event(int id,QString nom,QString prenom){
-    this->id=id;
-        this->nom=nom;
-        this->prenom=prenom;
 
+bool etudiant::ajouter()
+{
+  QSqlQuery query;
+  QString res = QString::number(id);
+
+  query.prepare("INSERT INTO SECURITE (id, nom, prenomm)""VALUES (:id, :nom, :prenomm)");
+
+  query.bindValue(":id",res);
+  query.bindValue(":nom",nom);
+  query.bindValue(":prenomm",prenom);
+
+  return query.exec();
 }
-int Event:: getid(){
-    return id;
-}
-QString Event:: getnom () {
-    return nom;
-}
-QString  Event::getprenom(){ return prenom;}
-void Event:: setid(int id){
-       this->id=id;
-}
-void Event:: setnom(QString nom){
-     this->nom=nom;
-}
-void Event:: setprenom(QString prenom){
-     this->prenom=prenom;
-}
-bool Event :: ajouter(){
 
-    QSqlQuery query;
-    QString id_string=QString::number(id);
-    query.prepare("INSERT INTO Etudiant (id, nom, prenom) "
-                  "VALUES (:id, :forename, :surname)");
-    query.bindValue(":id", id_string);
-    query.bindValue(":forename", nom);
-    query.bindValue(":surname", prenom);
-   return query.exec();
+QSqlQueryModel * etudiant::afficher()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
 
-
-    //return test;
-}
-bool Event ::supprimer(int id){
-
-    QSqlQuery query;
-
-    query.prepare("Delete from Etudiant where id =:id  ");
-    query.bindValue(0, id);
-
-   return query.exec();
-
-
-
-
-
-}
-   QSqlQueryModel* Event :: afficher(){
-
-
-
-    QSqlQueryModel* model=new QSqlQueryModel();
-
-
-    model->setQuery("select  * from Etudiant ");
-    model->setHeaderData(0, Qt::Horizontal,QObject:: tr("id"));
-    model->setHeaderData(1, Qt::Horizontal,QObject:: tr("nom"));
-      model->setHeaderData(2, Qt::Horizontal,QObject:: tr("prenom"));
-
+    model->setQuery("select * from SECURITE");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("Prenomm"));
 
     return model;
 }
+
+bool etudiant::supprimer(int id)
+{
+    QSqlQuery query;
+    QString res= QString::number(id);
+
+    query.prepare("Delete from SECURITE where ID= :id");
+    query.bindValue(":id",res);
+    return query.exec();
+}
+
+bool etudiant::recherche(int id)
+{
+
+
+      QSqlQuery query("SELECT * FROM SECURITE");
+      QSqlQuery recherche("select * from SECURITE where  ID = "+QString::number(id) );
+       // query.prepare ("select * from TABLE2 where id="+QString::number(id));
+        QSqlRecord test = recherche.record();
+
+        qDebug() << "Number of columns: " << test.count();
+
+        int nameCol = test.indexOf("id"); // index of the field "name"
+        while (recherche.next()){
+            qDebug() << recherche.value(nameCol).toString();
+            QString test= recherche.value(nameCol).toString();
+        if (test!=""){query.exec("select from SECURITE where ID="+QString::number(id));
+
+                return true;
+            }
+            return false;
+
+
+}
+    return query.exec();
+}
+
+QSqlQueryModel * etudiant::afficher2(int id)
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    QString res= QString::number(id);
+    model->setQuery("SELECT * from SECURITE WHERE ID=:id");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("Prenomm"));
+
+    return model;
+}
+
+QSqlQueryModel * etudiant::affichercroi()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    QString res= QString::number(id);
+    model->setQuery("SELECT * from SECURITE ORDER BY ID");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("Prenomm"));
+
+    return model;
+}
+
+QSqlQueryModel * etudiant::afficherdecroi()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    QString res= QString::number(id);
+    model->setQuery("SELECT * from SECURITE ORDER BY ID DESC");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("Prenomm"));
+
+    return model;
+}
+
+
+
 
 
 

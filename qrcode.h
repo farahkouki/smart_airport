@@ -1,18 +1,18 @@
 #ifndef QRCODE_H
 #define QRCODE_H
-
 #pragma once
 #include <array>
 #include <cstdint>
 #include <stdexcept>
 #include <string>
 #include <vector>
-/*class qrcode
+
+class qrcode
 {
 public:
     qrcode();
 };
-*/
+
 
 namespace qrcodegen {
 

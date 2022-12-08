@@ -1,16 +1,18 @@
 
 
-nombre dinvi <=50,21,#99e600
-nombre d invite <=100,18,#99cc00
-Automotinombre dinvite <=150,14,#99b300
-nombre dinvite=200,13,#9f991a
-nombre dinvite=250,13,#a48033
-nombre dinvite=300,13,#a9664d
-nombre dinvite=350,12,#ae4d66
-nombre dinvite=400,11,#b33380
-nombre dinvite=450,9,#a64086
-nombre dinvite=500,9,#994d8d
-nombre dinvite=550,7,#8d5a93
-nombre dinvite=600,6,#806699
-nombre dinvite=650,4,#8073a6
+
+nombre de vole(tunis) =50,21,#99e600
+nombre de vole(australie) =100,18,#99cc00
+nombre de vole(iceland)=150,14,#99b300
+nombre de vole(france) =200,13,#9f991a
+nombre de vole(UK)=250,13,#a48033
+nombre de vole(spain)=300,13,#a9664d
+nombre de vole(USA)=350,12,#ae4d66
+nombre de vole(japan)=400,11,#b33380
+nombre de vole(sweden)=450,9,#a64086
+nombre de vole(italy)=500,9,#994d8d
+nombre de vole(germany)=550,7,#8d5a93
+nombre de vole(denmark)=600,6,#806699
+nombre de vole(egypt)=650,4,#8073a6
+
 Other,38,#8080b3

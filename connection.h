@@ -4,18 +4,11 @@
 #include <QSqlError>
 #include <QSqlQuery>
 
-#include <QList>
-#include <QObject>
-
 class Connection
 {
 public:
     Connection();
     bool createconnect();
-
-
-   // Q_INVOKABLE QList<QObject*> eventsForDate(const QDate &date);
-
 };
 
 #endif // CONNECTION_H

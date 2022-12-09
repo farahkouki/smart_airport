@@ -1140,7 +1140,7 @@ void MainWindow::on_pushButton_18_clicked()
         //document.setHtml(html);
         QPrinter printer(QPrinter::PrinterResolution);
         printer.setOutputFormat(QPrinter::PdfFormat);
-        printer.setOutputFileName("C:/Users/elyes/Desktop/test.pdf");
+        printer.setOutputFileName("test.pdf");
         document->print(&printer);
 }
 

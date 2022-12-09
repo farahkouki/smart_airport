@@ -40,6 +40,7 @@ SOURCES += \
     connection.cpp \
     qrcode.cpp \
     stat.cpp \
+    voleeee.cpp \
     voyageur.cpp
 
 HEADERS += \
@@ -52,6 +53,7 @@ HEADERS += \
     connection.h \
     qrcode.h \
     stat.h \
+    voleeee.h \
     voyageur.h
 
 FORMS += \
